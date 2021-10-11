@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SideBarMenuCard, SideBarMenuItem } from "./types/types.d";
-
+import { classNames } from '../util/classes';
 interface SideBarMenuProps {
     items: SideBarMenuItem[];
     card: SideBarMenuCard;
@@ -8,5 +8,7 @@ interface SideBarMenuProps {
 
 export function SideBarMenu({ items, card }: SideBarMenuProps) {
     const [isOpen, setIsOpen] = useState<boolean>(true);
-    return <div>hulu</div>;
+    return <div className={classNames('SideBarMenu', isOpen ? 'expanded' : 'collapsed')}>
+
+    </div>;
 }
