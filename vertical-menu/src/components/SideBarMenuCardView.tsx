@@ -1,3 +1,3 @@
-export function SideBarMenuCardView(props: any) {
+export default function SideBarMenuCardView(props: any) {
     return <div>SideBarMenuCardView</div>
 }
