@@ -9,7 +9,19 @@ function App() {
       label: 'Hola',
       icon : FcAdvertising,
       url: '/',
-    }
+    },
+    {
+      id: '2',
+      label: 'Hola',
+      icon : FcAdvertising,
+      url: '/',
+    },
+    {
+      id: '3',
+      label: 'Hola',
+      icon : FcAdvertising,
+      url: '/',
+    },
   ];
 
   const card:SideBarMenuCard = {
