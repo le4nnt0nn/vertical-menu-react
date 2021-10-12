@@ -9,11 +9,16 @@ interface SideBarMenuProps {
 
 export function SideBarMenu({ items, card }: SideBarMenuProps) {
     const [isOpen, setIsOpen] = useState<boolean>(true);
+
+    function handleClick() {
+        setIsOpen(!isOpen);
+    }
+
     return <div 
         className={classNames('SideBarMenu', isOpen ? 'expanded' : 'collapsed')}
     >
         <div className='menuButton'>
-            <button>
+            <button className='hamburgerButton' onClick={handleClick}>
                 <VscMenu/>
             </button>
         </div>
