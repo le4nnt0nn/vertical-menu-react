@@ -1,12 +1,14 @@
 import { SideBarMenuCard } from "../types/types.d";
 import { classNames } from '../util/classes';
+
+import './SideBarMenuCardView.scss';
 interface SideBarMenuCardViewProps {
     card: SideBarMenuCard;
     isOpen: boolean;
 }
 
 export default function SideBarMenuCardView({card, isOpen}: SideBarMenuCardViewProps) {
-    return <div className='SideBarMenuCard'>
+    return <div className='SideBarMenuCardView'>
         <img className='profile' alt={card.displayName} src={card.photoUrl} width='100%'/>
         <div className={classNames('profileInfo', 
         isOpen ? '' : 'collapsed')}>
