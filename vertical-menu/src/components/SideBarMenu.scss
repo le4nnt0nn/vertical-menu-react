@@ -1,0 +1,22 @@
+@import './commons.scss';
+
+.SideBarMenu {
+    background: rgb(34, 34, 34);
+    color: white;
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    @include transition(width);
+
+    &.expanded {
+        width: 300px;
+    }
+
+    &.collapsed {
+        width: 68px;
+    }
+}
