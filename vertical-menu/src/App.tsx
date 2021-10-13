@@ -1,8 +1,8 @@
 import { SideBarMenu } from "./components/SideBarMenu";
 import { SideBarMenuCard, SideBarMenuItem } from "./types/types.d";
-import { 
-  FcAdvertising, 
-  FcEngineering, 
+import {
+  FcAdvertising,
+  FcEngineering,
   FcIdea,
   FcHome,
   FcInfo,
@@ -13,40 +13,40 @@ import profileImage from './images/anton.jpg';
 import './App.css';
 
 function App() {
-  const items:SideBarMenuItem[] = [
+  const items: SideBarMenuItem[] = [
     {
       id: '1',
       label: 'Inicio',
-      icon : FcHome,
+      icon: FcHome,
       url: '/',
     },
     {
       id: '2',
       label: 'Proyectos',
-      icon : FcIdea,
+      icon: FcIdea,
       url: '/',
     },
     {
       id: '3',
       label: 'Novedades',
-      icon : FcAdvertising,
+      icon: FcAdvertising,
       url: '/',
     },
     {
       id: '4',
       label: 'Información',
-      icon : FcInfo,
+      icon: FcInfo,
       url: '/',
     },
     {
       id: '5',
       label: 'Ajustes',
-      icon : FcEngineering,
+      icon: FcEngineering,
       url: '/',
     },
   ];
 
-  const card:SideBarMenuCard = {
+  const card: SideBarMenuCard = {
     id: 'card01',
     displayName: 'Antonio Cortés',
     title: 'Desarrollador',
@@ -55,7 +55,7 @@ function App() {
   }
   return (
     <div className='wrapper'>
-      <SideBarMenu items={items} card={card}/>
+      <SideBarMenu items={items} card={card} />
     </div>
   );
 }

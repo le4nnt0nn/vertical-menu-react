@@ -7,11 +7,11 @@ interface SideBarMenuCardViewProps {
     isOpen: boolean;
 }
 
-export default function SideBarMenuCardView({card, isOpen}: SideBarMenuCardViewProps) {
+export default function SideBarMenuCardView({ card, isOpen }: SideBarMenuCardViewProps) {
     return <div className='SideBarMenuCardView'>
-        <img className='profile' alt={card.displayName} src={card.photoUrl} width='100%'/>
-        <div className={classNames('profileInfo', 
-        isOpen ? '' : 'collapsed')}>
+        <img className='profile' alt={card.displayName} src={card.photoUrl} width='100%' />
+        <div className={classNames('profileInfo',
+            isOpen ? '' : 'collapsed')}>
             <div className='name'>{card.displayName}</div>
             <div className='title'>{card.title}</div>
             <div className='url'><a href='https://github.com/le4nnt0nn'>Ir al perfil</a></div>
