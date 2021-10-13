@@ -17,6 +17,6 @@ export default function SideBarMenuItemView({ item, isOpen }: SideBarMenuItemVie
                 <span className='label'>{item.label}</span>
             </div>
         </a>
-        {!isOpen ? <div className='toolbox'>{item.label}</div> : '' }
+        {!isOpen ? <div className='toolbox'>{item.label}</div> : ''}
     </div>
 }
