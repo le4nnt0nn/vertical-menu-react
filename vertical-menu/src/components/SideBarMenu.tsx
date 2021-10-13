@@ -19,15 +19,15 @@ export function SideBarMenu({ items, card }: SideBarMenuProps) {
         setIsOpen(!isOpen);
     }
 
-    return <div 
+    return <div
         className={classNames('SideBarMenu', isOpen ? 'expanded' : 'collapsed')}
     >
         <div className='menuButton'>
             <button className='hamburgerButton' onClick={handleClick}>
-                <VscMenu/>
+                <VscMenu />
             </button>
         </div>
-        <SideBarMenuCardView card={card} isOpen={isOpen}/>
+        <SideBarMenuCardView card={card} isOpen={isOpen} />
         {items.map((item) => (
             <SideBarMenuItemView key={item.id} item={item} isOpen={isOpen} />
         ))}
