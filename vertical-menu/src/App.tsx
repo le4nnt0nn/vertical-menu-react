@@ -1,7 +1,7 @@
 import { SideBarMenu } from "./components/SideBarMenu";
 import { SideBarMenuCard, SideBarMenuItem } from "./types/types.d";
 import { FcAdvertising } from 'react-icons/fc';
-
+import profileImage from './images/anton.jpg';
 function App() {
   const items:SideBarMenuItem[] = [
     {
@@ -28,7 +28,7 @@ function App() {
     id: 'card01',
     displayName: 'Antonio Cortés',
     title: 'Desarrollador',
-    photoUrl: '',
+    photoUrl: profileImage,
     url: '/',
   }
   return (
