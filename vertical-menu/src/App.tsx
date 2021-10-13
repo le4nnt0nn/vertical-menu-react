@@ -7,7 +7,11 @@ import {
   FcHome,
   FcInfo,
 } from 'react-icons/fc';
+
 import profileImage from './images/anton.jpg';
+
+import './App.css';
+
 function App() {
   const items:SideBarMenuItem[] = [
     {
@@ -50,7 +54,7 @@ function App() {
     url: '/',
   }
   return (
-    <div>
+    <div className='wrapper'>
       <SideBarMenu items={items} card={card}/>
     </div>
   );
