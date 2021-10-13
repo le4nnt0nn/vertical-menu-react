@@ -1,25 +1,43 @@
 import { SideBarMenu } from "./components/SideBarMenu";
 import { SideBarMenuCard, SideBarMenuItem } from "./types/types.d";
-import { FcAdvertising } from 'react-icons/fc';
+import { 
+  FcAdvertising, 
+  FcEngineering, 
+  FcIdea,
+  FcHome,
+  FcInfo,
+} from 'react-icons/fc';
 import profileImage from './images/anton.jpg';
 function App() {
   const items:SideBarMenuItem[] = [
     {
       id: '1',
-      label: 'Hola',
-      icon : FcAdvertising,
+      label: 'Inicio',
+      icon : FcHome,
       url: '/',
     },
     {
       id: '2',
-      label: 'Hola',
-      icon : FcAdvertising,
+      label: 'Proyectos',
+      icon : FcIdea,
       url: '/',
     },
     {
       id: '3',
-      label: 'Hola',
+      label: 'Novedades',
       icon : FcAdvertising,
+      url: '/',
+    },
+    {
+      id: '4',
+      label: 'Información',
+      icon : FcInfo,
+      url: '/',
+    },
+    {
+      id: '5',
+      label: 'Ajustes',
+      icon : FcEngineering,
       url: '/',
     },
   ];
