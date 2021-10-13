@@ -14,7 +14,7 @@ export default function SideBarMenuCardView({card, isOpen}: SideBarMenuCardViewP
         isOpen ? '' : 'collapsed')}>
             <div className='name'>{card.displayName}</div>
             <div className='title'>{card.title}</div>
-            <div className='url'><a href={card.url}>Ir al perfil</a></div>
+            <div className='url'><a href='https://github.com/le4nnt0nn'>Ir al perfil</a></div>
         </div>
     </div>
 }
